@@ -1,0 +1,179 @@
+/* default.css for Bongo Bazaar Wholesale */
+
+{
+padding: 0;
+margin: 0;
+}
+
+body {
+width: 1550px;
+margin-top: 10px;
+margin-left: 10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 1em;
+
+
+}
+
+/* top level container */
+div#page {
+width: 100%;
+width: 1050px;
+
+}
+
+/* company logo appearing at top of each page */
+div#logo {
+float:left;
+padding: 10px 0;
+
+}
+div#welcome {
+padding: 10px 0;
+
+}
+
+
+/* ===== content area for each page ===== */
+div#content p {
+margin: 1em .2em .7em 0;
+text-align: left;
+font-size: 1em;
+}
+div#homeText {
+float:left;
+
+width: 40%;
+
+}
+
+/* ===== only main page has image at right in content area ===== */
+div#image {
+float:left;
+width: 50%;
+text-align: center;
+}
+
+div#image img {
+margin-top: 40px;
+}
+
+/* ===== several pages have only text in the content area ===== */
+div#textOnly p {
+margin: 2em .2em .7em 0;
+}
+
+div#textOnly ol {
+margin: 50px 100px 20px;
+}
+
+div#textOnly ul {
+margin: 0 50px;
+}
+
+/* ===== pages with submenus at the left have text at the right ===== */
+div#textRight {
+float: left;
+width: 715px;
+margin-left: 5px;
+}
+
+/* classes for the always-visible menu options and the drop-down menu options */
+.mainLinks {
+clear: left;
+
+padding: 0;
+margin: 0;
+}
+
+/* for the always-visible menu options */
+.mainLinks li {
+
+padding: 0;
+margin: 0;
+float: left;
+list-style: none;
+font: bold .7em Verdana;
+}
+ 
+.mainLinks li a {
+display: block;
+width: 179px;
+padding: 4px 10px;
+margin: 0 1px 0 0;;
+background-color: #1E90FF;
+color: #FFF;
+text-align: center;
+text-decoration: none;
+}
+
+.mainLinks li a:hover {background-color: #4169E1;}
+
+/* for the drop-down menu options */
+.mainLinks div {
+position: absolute;
+background-color: #0000CD;
+border: 1px solid #048018;
+visibility: hidden;
+}
+
+.mainLinks div a {
+display: block;
+width: 179px;
+padding: 5px 10px;
+background-color: #87CEEB;
+color: #4169E1;
+text-align: left;
+text-decoration: none;
+font: bold 90% Verdana;
+}
+
+.mainLinks div a:hover {
+background-color: #0000CD;
+color: #FFF;
+}
+
+
+/* ===== footer has both copyright notice and a short menu ===== */
+/* Note that some styling for the main menu and submenus appears here
+   to avoid duplication, since certain styles are the same for all three
+   kinds of menus.
+*/
+/* footer must lie below content */
+div#footer {
+clear: left;
+}
+
+div#footer {
+clear: left;
+width: 100%;
+height: 17px;
+}
+
+div#copyright {
+float: left;
+width: 600px;
+height: 95%;
+padding-top: 5px;
+border-right: 1px solid #FFF;
+background-color: #1E90FF;
+color: #DDD;
+text-align: center;
+font-weight: bold;
+font-size: .7em;
+}
+
+div#footerMenu {
+float: left;
+width:900px;
+height: 100%;
+}
+
+
+/* === some pages with text at left or right of content area have headers === */
+div#textLeft h3, div#textRight h3 {
+margin: 1em 0 .7em;
+text-align: left;
+font-weight: bold;
+font-size: 1em;
+}
